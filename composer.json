@@ -11,8 +11,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/darkfoxdeveloper/flarumes/issues",
-        "source": "https://github.com/darkfoxdeveloper/flarumes"
+        "issues": "https://github.com/DaRkFoxDeveloper/flarum-ext-spanish/issues",
+        "source": "https://github.com/DaRkFoxDeveloper/flarum-ext-spanish"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.8"

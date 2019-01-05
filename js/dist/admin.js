@@ -98,7 +98,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_admin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/admin */ "./src/admin/index.js");
 /* empty/unused harmony star reexport *//*
- * This file is part of DaRkFoxDeveloper/FlarumES.
+ * This file is part of DaRkFoxDeveloper/FlarumExtSpanish.
  * -----------------------------------------------------------------------
  * Copyright © 2015-2019 Toby Zerner and Flarum
  * Copyright © 2015-2019 DaRkFoxDeveloper
@@ -144,7 +144,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /*
- * This file is part of DaRkFoxDeveloper/FlarumES.
+ * This file is part of DaRkFoxDeveloper/FlarumExtSpanish.
  * -----------------------------------------------------------------------
  * Copyright © 2015-2019 Toby Zerner and Flarum
  * Copyright © 2015-2019 DaRkFoxDeveloper
@@ -215,7 +215,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_app__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_SpanishSettingsModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/SpanishSettingsModal */ "./src/admin/components/SpanishSettingsModal.js");
 /*
- * This file is part of DaRkFoxDeveloper/FlarumES.
+ * This file is part of DaRkFoxDeveloper/FlarumExtSpanish.
  * -----------------------------------------------------------------------
  * Copyright © 2015-2019 Toby Zerner and Flarum
  * Copyright © 2015-2019 DaRkFoxDeveloper

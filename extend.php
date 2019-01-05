@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of DaRkFoxDeveloper/FlarumES.
+ * This file is part of DaRkFoxDeveloper/FlarumExtSpanish.
  * -----------------------------------------------------------------------
  * Copyright © 2015-2019 Toby Zerner and Flarum
  * Copyright © 2015-2019 DaRkFoxDeveloper
@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-use Flarum\Extend;
+namespace DaRkFoxDeveloper\FlarumExtSpanish;
+
 use Illuminate\Contracts\Events\Dispatcher;
+use Flarum\Extend\Frontend;
 use Flarum\Settings\SettingsRepositoryInterface;
+use DirectoryIterator;
 use Flarum\Event\ConfigureLocales;
-use Flarum\Event\ConfigureClientView;
 
 return [
-    (new Extend\Frontend('admin'))
-      ->js(__DIR__ . '/js/dist/admin.js')
-
-    , function (Dispatcher $events) {
-        $events->subscribe(SpanishLang::class);
-    },
+  (new Frontend('admin'))->js(__DIR__ . '/js/dist/admin.js')
+  ,function (Dispatcher $events) {
+    $events->subscribe(SpanishLang::class);
+  },
 ];
 
 class SpanishLang {
@@ -32,18 +32,18 @@ class SpanishLang {
     }
 
     public function subscribe(Dispatcher $events) {
-        $events->listen(ConfigureClientView::class, [$this, 'addSettingsPage']);
-        $events->listen(ConfigureLocales::class, [$this, 'addLocale']);
+       //$events->listen(ConfigureClientView::class, [$this, 'addSettingsPage']);
+       $events->listen(ConfigureLocales::class, [$this, 'addLocale']);
     }
 
-    public function addSettingsPage(ConfigureClientView $event) {
+    /*public function addSettingsPage(ConfigureClientView $event) {
         if ($event->isAdmin()) {
             $event->addAssets([
                 __DIR__ . '/js/dist/admin.js'
             ]);
             $event->addBootstrapper('darkfoxdeveloper-flarum-ext-spanish/js/dist/admin');
         }
-    }
+    }*/
 
     public function addLocale(ConfigureLocales $event) {
         $name = $title = basename(__DIR__);
