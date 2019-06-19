@@ -20,7 +20,7 @@ core:
     # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
       developer_text: "Si usted es un desarrollador, puede <a>leer la documentación</a> y probar a crear sus propias extensiones."
-      install_text: "Mientras tanto, puede encontrar extensiones en <a>Flarum.org</a> e instalarlas manualemente mediante Composer."
+      install_text: "Mientras tanto, puede encontrar extensiones en <a>Flarum.org</a> e instalarlas manualmente mediante Composer."
       temporary_text: "Un día, en un futuro no muy distante, este diálogo le permitirá añadir una extensión a su foro con facilidad. ¡Estamos creando la plataforma en este momento!"
       title: Añadir una extensión
 
@@ -49,7 +49,7 @@ core:
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
-      default_language_heading: Lengua por defecto
+      default_language_heading: Idioma por defecto
       forum_description_heading: Descripción del foro
       forum_description_text: Introduzca una o dos frases que describan su comunidad. Estas aparecerán en el "metatag" y se mostrarán en los buscadores.
       forum_title_heading: Título del foro
@@ -82,7 +82,7 @@ core:
     edit_group:
       color_label: => core.ref.color
       delete_button: Borrar grupo
-      delete_confirmation: "¿Está seguro de que desea eliminar este grupo? Los usuarios miembros del grupo NO serán eliminados."
+      delete_confirmation: "¿Está seguro de que desea eliminar este grupo? Los usuarios que pertenecen al grupo NO serán eliminados."
       icon_label: Icono
       icon_text: "Introduzca el nombre de alguna clase de icono de <a>FontAwesome</a>, <em>sin</em> el prefijo <code>fa-</code>."
       name_label: Nombre
@@ -102,7 +102,7 @@ core:
       account_heading: Cuenta SMTP
       addresses_heading: Direcciones
       driver_label: Driver
-      encryption_label: Encriptado
+      encryption_label: Cifrado
       from_label: Remitente
       heading: => core.ref.email
       host_label: Servidor
@@ -133,7 +133,7 @@ core:
       appearance_text: Personalizar el aspecto del foro.
       basics_button: Básicos
       basics_text: Ajustes generales del foro.
-      dashboard_button: Panel de Información
+      dashboard_button: Panel de información
       dashboard_text: El foro en un vistazo.
       email_button: => core.ref.email
       email_text: "Configure los ajustes del correo electrónico de su foro."
@@ -391,8 +391,8 @@ core:
     # These translations are used in the user profile page and profile popup.
     user:
       avatar_remove_button: => core.ref.remove
-      avatar_upload_button: Upload
-      avatar_upload_tooltip: Upload a new avatar
+      avatar_upload_button: Subir
+      avatar_upload_tooltip: Subir un avatar nuevo
       discussions_link: => core.ref.discussions
       in_discussion_text: "En {discussion}"
       joined_date_text: "Se unió {ago}"
@@ -498,7 +498,7 @@ core:
       body: |
         ¡Hola, {username}!
 
-        Alguien se ha registrado como usuario en {forum} con esta su dirección de correo electrónico.
+        Alguien se ha registrado como usuario en {forum} con esta dirección de correo electrónico.
 
         Si efectivamente ha sido usted, por favor, haga click en el siguiente enlace y su cuenta de usuario será activada:
         {url}
