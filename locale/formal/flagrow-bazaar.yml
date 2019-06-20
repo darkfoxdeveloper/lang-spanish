@@ -12,7 +12,7 @@ flagrow-bazaar:
     admin:
         loader:
             is_loading: Procesando..
-            error: Ha ocurrido un error.Comprueba el tab de historial y el log de Flarum para saber más detalles. No tengas miedo en reportárnoslo.
+            error: Ha ocurrido un error. Comprueba la pestaña de historial y el log de Flarum para saber más detalles. No tengas miedo en reportárnoslo.
             refresh: Actualizar pagina
             close: Cerrar
             report_issue: Reportar un problema
@@ -37,7 +37,7 @@ flagrow-bazaar:
                 field:
                     token:
                         label: Token API
-                        description: Esta token API es necesaria para acceder a la API de Extensiones de Flagrow. Si ya la tienes, ya está todo listo!
+                        description: Esta token API es necesaria para acceder a la API de Extensiones de Flagrow. Si ya la tienes ¡ya está todo listo!
                     use_cron_for_tasks:
                         label: Cronjobs
                         description: >
@@ -81,23 +81,23 @@ flagrow-bazaar:
                 update: Actualizar
                 connect: Conectar
                 favorite_button: "Marcar extensión en Favoritos"
-                remove_favorite_button: "Remover extensión de Favoritos"
-                subscribe: Comprar subscripción
-                unsubscribe: Cancelar subscripción
-                connect_to_subscribe: Conecta tu Bazar para subscribirte a extensiones
+                remove_favorite_button: "Eliminar extensión de Favoritos"
+                subscribe: Comprar suscripción
+                unsubscribe: Cancelar suscripción
+                connect_to_subscribe: Conecta tu Bazar para suscribirte a extensiones
             extension:
-                installed: Extension instalada
-                enabled: Extension habilitada
+                installed: Extensión instalada
+                enabled: Extensión habilitada
                 vendor: Por {vendor}
                 downloads: Descargas
                 installed_version: Versión instalada
-                highest_version: Ultima versión
+                highest_version: Última versión
                 favorites: Favorito
                 favorited: Uno de tus favoritos
                 pending: La extensión espera una tarea en segundo plano para completar
                 outdated: "La extensión no está actualizada, por favor actualice a la versión {new}"
                 premium: Premium
-                subscribed: Subscrito
+                subscribed: Suscrito
                 subscribe_check_failed: Parece que cancelaste el proceso de pago.
                 incompatible: Incompatible con tu versión actual de Flarum
                 next_incompatible: Incompatible con la próxima versión de Flarum
@@ -126,14 +126,14 @@ flagrow-bazaar:
                     uninstall: Desinstalar {extension}
                 group:
                     today: Hoy
-                    lastmonth: Ultimo mes
+                    lastmonth: Último mes
                     older: Más viejo
         search:
             placeholder: Buscar extensiones
             filter_installed: Instalada
             filter_update: Actualización disponible
             filter_favorited: Favoritos
-            filter_subscribed: Subscrito
+            filter_subscribed: Suscrito
             filter_premium: Premium
             filter_pending: Pendiente
             filter_languages: Lenguajes

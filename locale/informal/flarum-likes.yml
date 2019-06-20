@@ -40,7 +40,7 @@ flarum-likes:
 
     # These translations are used by the Users Who Like This modal dialog.
     post_likes:
-      title: Usuarios a quienes le gusta esto    # TODO: "¿A quién(es) les gusta esto?"
+      title: Usuarios a quienes les gusta esto
 
     # These translations are used in the Settings page.
     settings:
