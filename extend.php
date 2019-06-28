@@ -32,18 +32,8 @@ class SpanishLang {
     }
 
     public function subscribe(Dispatcher $events) {
-       //$events->listen(ConfigureClientView::class, [$this, 'addSettingsPage']);
        $events->listen(ConfigureLocales::class, [$this, 'addLocale']);
     }
-
-    /*public function addSettingsPage(ConfigureClientView $event) {
-        if ($event->isAdmin()) {
-            $event->addAssets([
-                __DIR__ . '/js/dist/admin.js'
-            ]);
-            $event->addBootstrapper('darkfoxdeveloper-flarum-ext-spanish/js/dist/admin');
-        }
-    }*/
 
     public function addLocale(ConfigureLocales $event) {
         $name = $title = basename(__DIR__);
