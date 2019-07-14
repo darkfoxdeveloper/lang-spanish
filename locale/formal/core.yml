@@ -83,8 +83,8 @@ core:
       color_label: => core.ref.color
       delete_button: Borrar grupo
       delete_confirmation: "¿Está seguro de que desea eliminar este grupo? Los usuarios que pertenecen al grupo NO serán eliminados."
-      icon_label: Icono
-      icon_text: "Introduzca el nombre de alguna clase de icono de <a>FontAwesome</a>, <em>sin</em> el prefijo <code>fa-</code>."
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
       name_label: Nombre
       plural_placeholder: Plural (p. ej. Moderadores)
       singular_placeholder: Singular (p. ej. Moderador)
@@ -99,8 +99,9 @@ core:
 
     # These translations are used in the email page of the admin interface.
     email:
-      account_heading: Cuenta SMTP
       addresses_heading: Direcciones
+      driver_heading: Elige un controlador
+      smtp_heading: SMTP Configuración
       driver_label: Driver
       encryption_label: Cifrado
       from_label: Remitente
@@ -108,7 +109,6 @@ core:
       host_label: Servidor
       password_label: => core.ref.password
       port_label: Puerto
-      server_heading: Servidor SMTP
       submit_button: => core.ref.save_changes
       text: Configure el servidor SMTP y las direcciones que su foro usará para enviar correo electrónico.
       username_label: => core.ref.username
@@ -200,7 +200,7 @@ core:
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: Enviar enlace                 # TODO: Check this
+      send_button: Enviar enlace
       text: Haga click en el botón de abajo y recibirá por correo electrónico un enlace para restablecer su contraseña.
       title: => core.ref.change_password
 
@@ -248,11 +248,11 @@ core:
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: "Parece que no hay ninguna discusión aquí... ¿Por qué no crea una?" # TODO: Empezar vs Crear
+      empty_text: "Parece que no hay discusiones aquí."
       load_more_button: => core.ref.load_more
-      mark_as_read_tooltip: Marcar como leído    # TODO: Gender
+      mark_as_read_tooltip: Marcar como leído
       replied_text: "{username} respondió {ago}"
-      started_text: "{username} creó {ago}"      # TODO: Empezar vs Crear
+      started_text: "{username} creó {ago}"
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
@@ -292,7 +292,7 @@ core:
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: No puede crear una discusión # TODO: Empezar vs Crear
+      cannot_start_discussion_button: No puede crear una discusión
       mark_all_as_read_confirmation: "¿Está seguro de que desea marcar todas las discusiones como leídas?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Cargar de nuevo
@@ -341,7 +341,7 @@ core:
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: Ahora
-      original_post_link: Publicación original   # TODO: Check this
+      original_post_link: Publicación original
       unread_text: "{count} sin leer"
       viewing_text: "{index} de {count} publicación|{index} de {count} publicaciones"
 
@@ -386,7 +386,7 @@ core:
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "¡Bienvenid@, {username}!"   # TODO: Gender
+      welcome_text: "¡Bienvenid@, {username}!"
 
     # These translations are used in the user profile page and profile popup.
     user:
@@ -463,6 +463,8 @@ core:
       403_message: ¡Nanay de la China! No tiene permiso para acceder a esta página.
       404_message: ¡Recórcholis! La página solicitada no ha podido ser encontrada.
       404_return_link: "Volver a {forum}"
+      419_message: Has estado inactivo por mucho tiempo.
+      419_return_link: Regresa, para volver a intentarlo.
       500_message: ¡Caramba! Ha ocurrido un error cuando se cargaba esta página.
       503_message: "{forum} esta en mantenimiento. Por favor, vuelva más tarde y disculpe la molestia."
 
@@ -564,6 +566,8 @@ core:
     discussions: Discusiones                     # Referenced by flarum-statistics.yml
     edit: Editar
     email: Correo electrónico
+    icon: Icono
+    icon_text: "Introduce el nombre de alguna classe de <a>FontAwesome</a>, <em>incluyendo</em> el prefijo <code>fas fa-</code>."
     load_more: Cargar más
     log_in: ¡Conéctese!
     log_out: Desconectarse
@@ -583,7 +587,7 @@ core:
     settings: Configuración
     sign_up: ¡Regístrese!
     some_others: "{count} más|{count} más"       # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: Crear discusión          # TODO: Empezar vs Crear
+    start_a_discussion: Crear discusión
     username: Nombre de usuario
     users: Usuarios                              # Referenced by flarum-statistics.yml
     write_a_reply: Escriba una respuesta...

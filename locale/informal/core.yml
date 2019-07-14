@@ -83,8 +83,8 @@ core:
       color_label: => core.ref.color
       delete_button: Borrar grupo
       delete_confirmation: "¿Estás seguro de que deseas eliminar este grupo? Los usuarios que pertenecen al grupo NO serán eliminados."
-      icon_label: Icono
-      icon_text: "Introduce el nombre de alguna clase de icono de <a>FontAwesome</a>, <em>sin</em> el prefijo <code>fa-</code>."
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
       name_label: Nombre
       plural_placeholder: Plural (p. ej. Moderadores)
       singular_placeholder: Singular (p. ej. Moderador)
@@ -99,8 +99,9 @@ core:
 
     # These translations are used in the email page of the admin interface.
     email:
-      account_heading: Cuenta SMTP
       addresses_heading: Direcciones
+      driver_heading: Elige un controlador
+      smtp_heading: SMTP Configuración
       driver_label: Driver
       encryption_label: Cifrado
       from_label: Remitente
@@ -200,7 +201,7 @@ core:
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: Enviar enlace                 # TODO: Check this
+      send_button: Enviar enlace
       text: Haz click en el botón de abajo y recibirás por correo electrónico un enlace para restablecer tu contraseña.
       title: => core.ref.change_password
 
@@ -248,11 +249,11 @@ core:
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: "Parece que no hay ninguna discusión aquí... ¿Por qué no creas una?" # TODO: Empezar vs Crear
+      empty_text: "Parece que no hay discusiones aquí."
       load_more_button: => core.ref.load_more
-      mark_as_read_tooltip: Marcar como leído    # TODO: Gender
+      mark_as_read_tooltip: Marcar como leído
       replied_text: "{username} respondió {ago}"
-      started_text: "{username} creó {ago}"      # TODO: Empezar vs Crear
+      started_text: "{username} creó {ago}"
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
@@ -292,7 +293,7 @@ core:
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: No puedes crear una discusión #TODO: Empezar vs Crear
+      cannot_start_discussion_button: No puedes crear una discusión
       mark_all_as_read_confirmation: "¿Estás seguro de que deseas marcar todas las discusiones como leídas?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Cargar de nuevo
@@ -341,7 +342,7 @@ core:
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: Ahora
-      original_post_link: Publicación original   # TODO: Check this
+      original_post_link: Publicación original
       unread_text: "{count} sin leer"
       viewing_text: "{index} de {count} publicación|{index} de {count} publicaciones"
 
@@ -386,7 +387,7 @@ core:
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
       username_placeholder: => core.ref.username
-      welcome_text: "¡Bienvenid@, {username}!"   # TODO: Gender
+      welcome_text: "¡Bienvenid@, {username}!"
 
     # These translations are used in the user profile page and profile popup.
     user:
@@ -464,7 +465,7 @@ core:
       404_message: ¡Recórcholis! La página solicitada no ha podido ser encontrada.
       404_return_link: "Volver a {forum}"
       500_message: ¡Caramba! Ha ocurrido un error cuando se cargaba esta página.
-      503_message: "{forum} esta en mantenimiento. Por favor, vuelve más tarde y disculpa la molestia."
+      503_message: "{forum} esta en mantenimiento. Por favor, vuelva más tarde y disculpe la molestia."
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -583,7 +584,7 @@ core:
     settings: Configuración
     sign_up: ¡Regístrate!
     some_others: "{count} más|{count} más"       # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: Crear discusión          # TODO: Empezar vs Crear
+    start_a_discussion: Crear discusión
     username: Nombre de usuario
     users: Usuarios                              # Referenced by flarum-statistics.yml
     write_a_reply: Escribe una respuesta...

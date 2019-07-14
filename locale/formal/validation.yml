@@ -27,6 +27,7 @@ validation:
   boolean: "El campo :attribute debe ser verdadero o falso."
   confirmed: "La confirmación del :attribute no concuerda."
   date: "El :attribute no es una fecha válida."
+  date_equals: "El :attribute tiene que ser igual a la fecha :date."
   date_format: "El :attribute no concuerda con el formato :other."
   different: "El :attribute y :other deben ser diferentes."
   digits: "El :attribute debe tener :digits dígitos."
@@ -34,6 +35,7 @@ validation:
   dimensions: "El :attribute tiene dimensiones inválidas."
   distinct: "El campo :attribute tiene un valor deplicado."
   email: "El :attribute debe ser una dirección de correo electrónico válida."
+  ends_with: "El :attribute tiene que terminar con uno de los siguientes valores: :values"
   exists: "El :attribute seleccionado es inválido."                 # TOD: Verify!
   file: "El :attribute debe ser un fichero."
   filled: "El campo :attribute debe tener un valor."
@@ -95,6 +97,7 @@ validation:
     file: "El :attribute debe tener :size kilobytes."
     string: "El :attribute debe tener :size caracteres."
     array: "El :attribute debe contener :size elementos."
+  starts_with: "El :attribute tiene que empezar con uno de los siguientes valores: :values"
   string: "El :attribute debe ser una cadena."
   timezone: "El :attribute debe ser una zona válida."
   unique: "El :attribute ya existe."
