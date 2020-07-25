@@ -315,7 +315,7 @@ core:
     index_sort:
       latest_button: Lo último
       newest_button: Lo más nuevo
-      oldest_button: Lo más viejo
+      oldest_button: Lo más antiguo
       relevance_button: Lo más relevante
       top_button: Lo más comentado
 
