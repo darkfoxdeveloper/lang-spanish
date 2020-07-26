@@ -19,9 +19,9 @@ core:
 
     # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
-      developer_text: "Si tú eres un desarrollador, puedes <a>leer la documentación</a> y probar a crear tus propias extensiones."
-      install_text: "Mientras tanto, puedes encontrar extensiones en <a>Flarum.org</a> e instalarlas manualmente mediante Composer."
-      temporary_text: "Un día, en un futuro no muy distante, este diálogo te permitirá añadir una extensión a tu foro con facilidad. ¡Estamos creando la plataforma en este momento!"
+      developer_text: "Si usted es un desarrollador, puede <a>leer la documentación</a> y probar a crear sus propias extensiones."
+      install_text: "Mientras tanto, puede encontrar extensiones en <a>Flarum.org</a> e instalarlas manualmente mediante Composer."
+      temporary_text: "Un día, en un futuro no muy distante, este diálogo le permitirá añadir una extensión a su foro con facilidad. ¡Estamos creando la plataforma en este momento!"
       title: Añadir una extensión
 
     # These translations are used in the Appearance page.
@@ -34,34 +34,32 @@ core:
       custom_header_heading: Cabecera personalizada
       custom_header_text: => core.ref.custom_header_text
       custom_styles_heading: Estilos personalizados
-      custom_styles_text: "Personaliza la apariencia de tu foro añadiendo tu propio código LESS/CSS, que se aplicará sobre los estilos por defecto de Flarum."
+      custom_styles_text: "Personalice la apariencia de su foro añadiendo su propio código LESS/CSS, que se aplicará sobre los estilos por defecto de Flarum."
       dark_mode_label: Modo oscuro
       edit_css_button: Editar los estilos personalizados
       edit_footer_button: => core.ref.custom_footer_title
       edit_header_button: => core.ref.custom_header_title
-      enter_hex_message: "Por favor, introduce un código hexadecimal de color."
+      enter_hex_message: "Por favor, introduzca un código hexadecimal de color."
       favicon_heading: "Icono de Favoritos o <em>Favicon</em>"
-      favicon_text: Sube una imagen para que sea mostrada como icono de acceso directo al foro.
+      favicon_text: Suba una imagen para que sea mostrada como icono de acceso directo al foro.
       logo_heading: Logotipo
-      logo_text: Sube una imagen para que sea mostrada en lugar del título del foro.
+      logo_text: Suba una imagen para que sea mostrada en lugar del título del foro.
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: Idioma por defecto
-      display_name_heading: User Display Name
-      display_name_text: Select the driver that should be used for users' display names. By default, the username is shown.
       forum_description_heading: Descripción del foro
-      forum_description_text: Introduce una o dos frases que describan tu comunidad. Estas aparecerán en el "metatag" y se mostrarán en los buscadores.
+      forum_description_text: Introduzca una o dos frases que describan su comunidad. Estas aparecerán en el "metatag" y se mostrarán en los buscadores.
       forum_title_heading: Título del foro
       home_page_heading: Página de inicio
-      home_page_text: "Elige cuál es la portada que los usuarios verán al llegar al foro." #TODO: Custom
-      saved_message: Tus cambios fueron guardados.
+      home_page_text: "Elija cuál es la portada que los usuarios verán al llegar al foro." # TODO: Custom
+      saved_message: Sus cambios fueron guardados.
       show_language_selector_label: Mostrar el selector de idioma
       submit_button: => core.ref.save_changes
       welcome_banner_heading: Mensaje de bienvenida
-      welcome_banner_text: Introduce el texto que se mostrará en la lista de discusiones. Utilízalo para dar la bienvenida a los invitados en tu foro.
+      welcome_banner_text: Introduzca el texto que se mostrará en la lista de discusiones. Utilícelo para dar la bienvenida a los invitados en su foro.
 
     # These translations are used in the Dashboard page.
     dashboard:
@@ -70,7 +68,7 @@ core:
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
-      customize_text: "Personaliza la apariencia de tu foro añadiendo tu propio código LESS/CSS que será aplicado sobre los <a>estilos por defecto</a> de Flarum."
+      customize_text: "Personalice la apariencia de su foro añadiendo su propio código LESS/CSS que será aplicado sobre los <a>estilos por defecto</a> de Flarum."
       submit_button: => core.ref.save_changes
       title: Editar CSS personalizado
 
@@ -84,8 +82,7 @@ core:
     edit_group:
       color_label: => core.ref.color
       delete_button: Borrar grupo
-      delete_confirmation: "¿Estás seguro de que deseas eliminar este grupo? Los usuarios que pertenecen al grupo NO serán eliminados."
-      hide_label: Ocultar en el foro
+      delete_confirmation: "¿Está seguro de que desea eliminar este grupo? Los usuarios que pertenecen al grupo NO serán eliminados."
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: Nombre
@@ -104,24 +101,17 @@ core:
     email:
       addresses_heading: Direcciones
       driver_heading: Elige un controlador
+      smtp_heading: SMTP Configuración
       driver_label: Driver
+      encryption_label: Cifrado
       from_label: Remitente
       heading: => core.ref.email
-      mail_encryption_label: Cifrado
-      mail_host_label: Servidor
-      mail_mailgun_domain_label: Dominio
-      mail_mailgun_region_label: Región
-      mail_mailgun_secret_label: Clave secreta
-      mail_mandrill_secret_label: Clave secreta
-      mail_password_label: => core.ref.password
-      mail_port_label: Puerto
-      mail_username_label: => core.ref.username
-      mailgun_heading: Configuración Mailgun
-      mandrill_heading: Configuración Mandrill
-      not_sending_message: Actualmente Flarum no envía correos electrónicos. Esto puede deberse al controlador seleccionado, o errores en su configuración.
-      smtp_heading: Configuración SMTP
+      host_label: Servidor
+      password_label: => core.ref.password
+      port_label: Puerto
       submit_button: => core.ref.save_changes
-      text: Configura el servidor SMTP y las direcciones que tu foro usará para enviar correo electrónico.
+      text: Configure el servidor SMTP y las direcciones que su foro usará para enviar correo electrónico.
+      username_label: => core.ref.username
 
     # These translations are used in the Extensions page.
     extensions:
@@ -135,7 +125,7 @@ core:
 
     # These translations are used in the modal dialog displayed when loading extensions.
     loading:
-      title: "Por favor, espera..."
+      title: "Por favor, espere..."
 
     # These translations are used in the navigation bar.
     nav:
@@ -146,11 +136,11 @@ core:
       dashboard_button: Panel de información
       dashboard_text: El foro en un vistazo.
       email_button: => core.ref.email
-      email_text: "Configura los ajustes del correo electrónico de tu foro."
+      email_text: "Configure los ajustes del correo electrónico de su foro."
       extensions_button: Extensiones
       extensions_text: Añadir funcionalidad al foro.
       permissions_button: Permisos
-      permissions_text: "Configura quién puede hacer qué."
+      permissions_text: "Configure quién puede hacer qué."
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
@@ -162,19 +152,16 @@ core:
       delete_posts_forever_label: Eliminar publicaciones para siempre
       delete_posts_label: Borrar publicaciones
       edit_posts_label: Editar publicaciones
-      edit_users_label: Editar usuarios
       global_heading: Global
       moderate_heading: Moderado
       new_group_button: Nuevo grupo
       participate_heading: Participar
-      post_without_throttle_label: Publicar varias veces sin tener que esperar
       read_heading: Leer
       rename_discussions_label: Cambiar el título a discusiones
       reply_to_discussions_label: Responder en discusiones
       sign_up_label: Registro de usuarios
       start_discussions_label: Crear discusiones
       view_discussions_label: Ver discusiones
-      view_hidden_groups_label: Ver iconos de grupos ocultos
       view_last_seen_at_label: Ver a qué hora fue la última conexión de un usuario
       view_post_ips_label: Ver direcciones IP de las publicaciones
       view_user_list_label: Ver la lista de usuarios
@@ -214,7 +201,7 @@ core:
     # These translations are used in the Change Password modal dialog.
     change_password:
       send_button: Enviar enlace
-      text: Haz click en el botón de abajo y recibirás por correo electrónico un enlace para restablecer tu contraseña.
+      text: Haga click en el botón de abajo y recibirá por correo electrónico un enlace para restablecer su contraseña.
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
@@ -227,32 +214,32 @@ core:
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: Escribe una publicación...
-      discard_confirmation: "Aún no has publicado tu discusión. ¿Estás seguro de que deseas descartarla?"
+      body_placeholder: Escriba una publicación...
+      discard_confirmation: "Aún no ha publicado su discusión. ¿Está seguro de que desea descartarla?"
       submit_button: Publicar discusión
       title: => core.ref.start_a_discussion
       title_placeholder: Título de la discusión
 
     # These translations are used by the composer when editing a post.
     composer_edit:
-      discard_confirmation: "Aún no has publicado tus cambios. ¿Estás seguro de que deseas descartarlos?"
+      discard_confirmation: "Aún no ha publicado sus cambios. ¿Está seguro de que desea descartarlos?"
       post_link: "Publicación n.º {number} en '{discussion}'"
       submit_button: => core.ref.save_changes
 
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "Aún no has publicado tu respuesta. ¿Estás seguro de que desea descartarla?"
-      posted_message: Tu respuesta fue publicada.
+      discard_confirmation: "Aún no ha publicado su respuesta. ¿Está seguro de que desea descartarla?"
+      posted_message: Su respuesta fue publicada.
       submit_button: Publicar respuesta
       view_button: Ver
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: No puedes responder
+      cannot_reply_button: No puede responder
       cannot_reply_text: Usted no tiene permiso para responder en esta discusión.
       delete_button: => core.ref.delete
-      delete_confirmation: "¿Estás seguro de que deseas eliminar esta discusión?"
+      delete_confirmation: "¿Está seguro de que desea eliminar esta discusión?"
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: Responder
       rename_button: => core.ref.rename
@@ -285,11 +272,11 @@ core:
     forgot_password:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      email_sent_message: "Te hemos enviado un correo electrónico que contiene un enlace para restablecer tu contraseña. Si no aparece pronto, por favor, comprueba la carpeta de correo no deseado (spam)."
+      email_sent_message: "Le hemos enviado un correo electrónico que contiene un enlace para restablecer su contraseña. Si no aparece pronto, por favor, compruebe la carpeta de correo no deseado (spam)."
       not_found_message: No hay ningún usuario registrado con esa dirección de correo electrónico.
       submit_button: Restablecer contraseña
-      text: Introduce tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.
-      title: ¿Olvidaste tu contraseña?
+      text: Introduzca su correo electrónico y le enviaremos un enlace para restablecer su contraseña.
+      title: ¿Olvidó su contraseña?
 
     # These translations are used in the header and session dropdown menu.
     header:
@@ -305,8 +292,8 @@ core:
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: No puedes crear una discusión
-      mark_all_as_read_confirmation: "¿Estás seguro de que deseas marcar todas las discusiones como leídas?"
+      cannot_start_discussion_button: No puede crear una discusión
+      mark_all_as_read_confirmation: "¿Está seguro de que desea marcar todas las discusiones como leídas?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Cargar de nuevo
       start_discussion_button: => core.ref.start_a_discussion
@@ -315,17 +302,17 @@ core:
     index_sort:
       latest_button: Lo último
       newest_button: Lo más nuevo
-      oldest_button: Lo más antiguo
+      oldest_button: Lo más viejo
       relevance_button: Lo más relevante
       top_button: Lo más comentado
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      forgot_password_link: "¿Olvidaste tu contraseña?"
-      invalid_login_message: Tus credenciales son incorrectas.
+      forgot_password_link: "¿Olvidó su contraseña?"
+      invalid_login_message: Sus credenciales son incorrectas.
       password_placeholder: => core.ref.password
-      remember_me_label: Recordarte
-      sign_up_text: "¿Aún no tienes una cuenta? <a>¡Regístrate!</a>"
+      remember_me_label: Recordarle
+      sign_up_text: "¿Aún no tiene una cuenta? <a>¡Regístrese!</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
       username_or_email_placeholder: Nombre de usuario o correo electrónico
@@ -335,7 +322,6 @@ core:
       discussion_renamed_text: "{username} cambió el título"
       empty_text: No hay notificaciones
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
-      mark_as_read_tooltip: Marcar como leído
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
@@ -348,10 +334,8 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
-      delete_confirmation: "¿Estás seguro de que deseas eliminar este mensaje para siempre? Esta acción no se puede deshacer."
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
-      hide_confirmation: "¿Estás seguro de que deseas eliminar este mensaje?"
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.
@@ -388,8 +372,8 @@ core:
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: Web
-      notify_discussion_renamed_label: Alguien cambió el título de una discusión que tú creaste
-      privacy_disclose_online_label: Permitir que otros vean que estás conectado
+      notify_discussion_renamed_label: Alguien cambió el título de una discusión que usted creó
+      privacy_disclose_online_label: Permitir que otros vean cuándo está conectado
       privacy_heading: Privacidad
       title: => core.ref.settings
 
@@ -397,7 +381,7 @@ core:
     sign_up:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
-      log_in_text: "¿Ya tienes una cuenta? <a>¡Conéctate!</a>"
+      log_in_text: "¿Ya tiene una cuenta? <a>¡Conéctese!</a>"
       password_placeholder: => core.ref.password
       submit_button: => core.ref.sign_up
       title: => core.ref.sign_up
@@ -413,7 +397,7 @@ core:
       in_discussion_text: "En {discussion}"
       joined_date_text: "Se unió {ago}"
       online_text: En línea
-      posts_empty_text: Parece que no hay ninguna discusión aquí... ¿Por qué no creas una?
+      posts_empty_text: Parece que no hay ninguna discusión aquí... ¿Por qué no crea una?
       posts_link: => core.ref.posts
       posts_load_more_button: => core.ref.load_more
       settings_link: => core.ref.settings
@@ -422,9 +406,7 @@ core:
     user_controls:
       button: Controles
       delete_button: => core.ref.delete
-      delete_confirmation: "¿Estás seguro de que quieres eliminar este usuario? Las publicaciones del usuario serán eliminadas."
-      delete_error_message: "Falló la eliminación del usuario <i>{username} ({email})</i>"
-      delete_success_message: "El usuario <i>{username} ({email})</i> fue eliminado"
+      delete_confirmation: "¿Está seguro de que quiere eliminar este usuario? Las publicaciones del usuario serán eliminadas."
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
@@ -442,15 +424,15 @@ core:
 
     # These translations are displayed as error messages.
     error:
-      generic_message: "¡Caramba! Algo salió mal. Por favor, carga de nuevo la página y vuelve a intentarlo."
+      generic_message: "¡Caramba! Algo salió mal. Por favor, cargue de nuevo la página y vuelva a intentarlo."
       not_found_message: "¡Recórcholis! El recurso solicitado no fue encontrado."
-      permission_denied_message: "¡Nanay de la China! No tienes permiso para hacer eso."
-      rate_limit_exceeded_message: "¡Para el carro! Vas tú muy rápido. Por favor, vuelve a intentarlo en unos segundos."
+      permission_denied_message: "¡Nanay de la China! No tiene permiso para hacer eso."
+      rate_limit_exceeded_message: "¡Pare el carro! Va usted muy rápido. Por favor, vuelva a intentarlo en unos segundos."
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
-      kilo_text: "K"
-      mega_text: "M"
+      kilo_text: " Mil"
+      mega_text: " Millón| Millones"
 
     # These translations are used to punctuate a series of items.
     series:
@@ -478,14 +460,13 @@ core:
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      csrf_token_mismatch: Has estado inactivo por mucho tiempo.
-      csrf_token_mismatch_return_link: Regresa, para volver a intentarlo.
-      invalid_confirmation_token: Este enlace de confirmación ya se ha utilizado o no es válido.
-      not_authenticated: No tienes permiso para acceder a esta página. Inténtalo de nuevo después de iniciar sesión.
-      not_found: ¡Recórcholis! La página solicitada no ha podido ser encontrada.
-      not_found_return_link: "Volver a {forum}"
-      permission_denied: ¡Nanay de la China! No tienes permiso para acceder a esta página.
-      unknown: ¡Caramba! Ha ocurrido un error cuando se cargaba esta página.
+      403_message: ¡Nanay de la China! No tiene permiso para acceder a esta página.
+      404_message: ¡Recórcholis! La página solicitada no ha podido ser encontrada.
+      404_return_link: "Volver a {forum}"
+      419_message: Has estado inactivo por mucho tiempo.
+      419_return_link: Regresa, para volver a intentarlo.
+      500_message: ¡Caramba! Ha ocurrido un error cuando se cargaba esta página.
+      503_message: "{forum} esta en mantenimiento. Por favor, vuelva más tarde y disculpe la molestia."
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -496,7 +477,7 @@ core:
     # Translations in this namespace are displayed by the Log Out confirmation interface.
     log_out:
       log_out_button: => core.ref.log_out
-      log_out_confirmation: "¿Seguro que quieres desconectarse de {forum}?"
+      log_out_confirmation: "¿Seguro que quiere desconectarse de {forum}?"
       title: => core.ref.log_out
 
     # Translations in this namespace are displayed by the Reset Password interface.
@@ -515,35 +496,35 @@ core:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
-      subject: Activa tu cuenta de usuario
+      subject: Active su cuenta de usuario
       body: |
         ¡Hola, {username}!
 
         Alguien se ha registrado como usuario en {forum} con esta dirección de correo electrónico.
 
-        Si efectivamente has sido tú, por favor, haz click en el siguiente enlace y tu cuenta de usuario será activada:
+        Si efectivamente ha sido usted, por favor, haga click en el siguiente enlace y su cuenta de usuario será activada:
         {url}
 
-        Si por el contrario no has sido tú, por favor, ignora este correo electrónico.
+        Si por el contrario no ha sido usted, por favor, ignore este correo electrónico.
 
-        Recibe un cordial saludo,
+        Reciba un cordial saludo,
 
         El Equipo de {forum}
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
-      subject: Confirma tu correo electrónico
+      subject: Confirme su correo electrónico
       body: |
         ¡Hola, {username}!
 
-        Alguien se ha registrado como usuario en {forum} con tu dirección de correo electrónico.
+        Alguien se ha registrado como usuario en {forum} con su dirección de correo electrónico.
 
-        Si efectivamente has sido tú, por favor, haz click en el siguiente enlace para confirmar tu dirección de correo electrónico:
+        Si efectivamente ha sido usted, por favor, haga click en el siguiente enlace para confirmar tu dirección de correo electrónico:
         {url}
 
-        Si por el contrario no has sido tú, por favor, ignora este correo electrónico.
+        Si por el contrario no ha sido usted, por favor, ignore este correo electrónico.
 
-        Recibe un cordial saludo,
+        Reciba un cordial saludo,
 
         El Equipo de {forum}
 
@@ -555,12 +536,12 @@ core:
 
         Alguien ha enviado una solicitud para restablecer la contraseña de su cuenta de usuario en {forum}.
 
-        Si efectivamente has sido tú, por favor, haz click en el siguiente enlace para restablecer tu contraseña:
+        Si efectivamente ha sido usted, por favor, haga click en el siguiente enlace para restablecer su contraseña:
         {url}
 
-        Si por el contrario no has sido tú, por favor, ignora este correo electrónico.
+        Si por el contrario no ha sido usted, por favor, ignore este correo electrónico.
 
-        Recibe un cordial saludo,
+        Reciba un cordial saludo,
 
         El Equipo de {forum}
 
@@ -575,10 +556,10 @@ core:
     change_password: Cambiar la contraseña
     color: Color                                 # Referenced by flarum-tags.yml
     confirm_password: Confirmar la contraseña
-    confirmation_email_sent: "Te hemos enviado un correo electrónico de confirmación a {email}. Si no aparece pronto, por favor, comprueba la carpeta de correo no deseado (spam)."
-    custom_footer_text: Añade código HTML para que este sea mostrado en la parte más baja de la página.
+    confirmation_email_sent: "Le hemos enviado un correo electrónico de confirmación a {email}. Si no aparece pronto, por favor, compruebe la carpeta de correo no deseado (spam)."
+    custom_footer_text: Añada código HTML para que este sea mostrado en la parte más baja de la página.
     custom_footer_title: Editar el pié de página personalizado
-    custom_header_text: "Añade código HTML para que este sea mostrado en la parte más alta de la página, sobre la cabecera de Flarum."
+    custom_header_text: "Añada código HTML para que este sea mostrado en la parte más alta de la página, sobre la cabecera de Flarum."
     custom_header_title: Editar la cabecera personalizada
     delete: Eliminar
     delete_forever: Eliminar para siempre
@@ -586,9 +567,9 @@ core:
     edit: Editar
     email: Correo electrónico
     icon: Icono
-    icon_text: "Introduce el nombre de alguna clase de <a>FontAwesome</a>, <em>incluyendo</em> el prefijo <code>fas fa-</code>."
+    icon_text: "Introduce el nombre de alguna classe de <a>FontAwesome</a>, <em>incluyendo</em> el prefijo <code>fas fa-</code>."
     load_more: Cargar más
-    log_in: ¡Conéctate!
+    log_in: ¡Conéctese!
     log_out: Desconectarse
     mark_all_as_read: Marcar todas como leídas
     next_page: Página siguiente
@@ -600,17 +581,17 @@ core:
     remove: Eliminar
     rename: Renombrar
     reply: Responder                             # Referenced by flarum-mentions.yml
-    reset_your_password: Restablece tu contraseña
+    reset_your_password: Restablezca su contraseña
     restore: Restaurar
     save_changes: Guardar cambios                # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Configuración
-    sign_up: ¡Regístrate!
+    sign_up: ¡Regístrese!
     some_others: "{count} más|{count} más"       # Referenced by flarum-likes.yml, flarum-mentions.yml
     start_a_discussion: Crear discusión
     username: Nombre de usuario
     users: Usuarios                              # Referenced by flarum-statistics.yml
-    write_a_reply: Escribe una respuesta...
-    you: Tú                                      # Referenced by flarum-likes.yml, flarum-mentions.yml
+    write_a_reply: Escriba una respuesta...
+    you: Usted                                   # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
   # GROUP NAMES - These keys are translated at the back end.
