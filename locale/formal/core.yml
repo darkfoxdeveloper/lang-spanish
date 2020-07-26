@@ -315,7 +315,7 @@ core:
     index_sort:
       latest_button: Lo último
       newest_button: Lo más nuevo
-      oldest_button: Lo más viejo
+      oldest_button: Lo más antiguo
       relevance_button: Lo más relevante
       top_button: Lo más comentado
 
@@ -449,8 +449,8 @@ core:
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
-      kilo_text: " Mil"
-      mega_text: " Millón| Millones"
+      kilo_text: "K"
+      mega_text: "M"
 
     # These translations are used to punctuate a series of items.
     series:
