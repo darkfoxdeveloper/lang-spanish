@@ -50,6 +50,8 @@ core:
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: Idioma por defecto
+      display_name_heading: User Display Name
+      display_name_text: Select the driver that should be used for users' display names. By default, the username is shown.
       forum_description_heading: Descripción del foro
       forum_description_text: Introduzca una o dos frases que describan su comunidad. Estas aparecerán en el "metatag" y se mostrarán en los buscadores.
       forum_title_heading: Título del foro
@@ -83,6 +85,7 @@ core:
       color_label: => core.ref.color
       delete_button: Borrar grupo
       delete_confirmation: "¿Está seguro de que desea eliminar este grupo? Los usuarios que pertenecen al grupo NO serán eliminados."
+      hide_label: Ocultar en el foro
       icon_label: => core.ref.icon
       icon_text: => core.ref.icon_text
       name_label: Nombre
@@ -101,17 +104,24 @@ core:
     email:
       addresses_heading: Direcciones
       driver_heading: Elige un controlador
-      smtp_heading: SMTP Configuración
       driver_label: Driver
-      encryption_label: Cifrado
       from_label: Remitente
       heading: => core.ref.email
-      host_label: Servidor
-      password_label: => core.ref.password
-      port_label: Puerto
+      mail_encryption_label: Cifrado
+      mail_host_label: Servidor
+      mail_mailgun_domain_label: Dominio
+      mail_mailgun_region_label: Región
+      mail_mailgun_secret_label: Clave secreta
+      mail_mandrill_secret_label: Clave secreta
+      mail_password_label: => core.ref.password
+      mail_port_label: Puerto
+      mail_username_label: => core.ref.username
+      mailgun_heading: Configuración Mailgun
+      mandrill_heading: Configuración Mandrill
+      not_sending_message: Actualmente Flarum no envía correos electrónicos. Esto puede deberse al controlador seleccionado, o errores en su configuración.
+      smtp_heading: Configuración SMTP
       submit_button: => core.ref.save_changes
-      text: Configure el servidor SMTP y las direcciones que su foro usará para enviar correo electrónico.
-      username_label: => core.ref.username
+      text: Configure el servidor SMTP y las direcciones que su foro usará para enviar correos electrónicos.
 
     # These translations are used in the Extensions page.
     extensions:
@@ -140,7 +150,7 @@ core:
       extensions_button: Extensiones
       extensions_text: Añadir funcionalidad al foro.
       permissions_button: Permisos
-      permissions_text: "Configure quién puede hacer qué."
+      permissions_text: Configure quién puede hacer qué.
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
@@ -152,16 +162,19 @@ core:
       delete_posts_forever_label: Eliminar publicaciones para siempre
       delete_posts_label: Borrar publicaciones
       edit_posts_label: Editar publicaciones
+      edit_users_label: Editar usuarios
       global_heading: Global
       moderate_heading: Moderado
       new_group_button: Nuevo grupo
       participate_heading: Participar
+      post_without_throttle_label: Publicar varias veces sin tener que esperar
       read_heading: Leer
       rename_discussions_label: Cambiar el título a discusiones
       reply_to_discussions_label: Responder en discusiones
       sign_up_label: Registro de usuarios
       start_discussions_label: Crear discusiones
       view_discussions_label: Ver discusiones
+      view_hidden_groups_label: Ver iconos de grupos ocultos
       view_last_seen_at_label: Ver a qué hora fue la última conexión de un usuario
       view_post_ips_label: Ver direcciones IP de las publicaciones
       view_user_list_label: Ver la lista de usuarios
@@ -302,7 +315,7 @@ core:
     index_sort:
       latest_button: Lo último
       newest_button: Lo más nuevo
-      oldest_button: Lo más viejo
+      oldest_button: Lo más antiguo
       relevance_button: Lo más relevante
       top_button: Lo más comentado
 
@@ -322,6 +335,7 @@ core:
       discussion_renamed_text: "{username} cambió el título"
       empty_text: No hay notificaciones
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      mark_as_read_tooltip: Marcar como leído
       title: => core.ref.notifications
       tooltip: => core.ref.notifications
 
@@ -334,8 +348,10 @@ core:
     # These translations are used by the post control buttons.
     post_controls:
       delete_button: => core.ref.delete
+      delete_confirmation: "¿Está seguro de que desea eliminar este mensaje para siempre? Esta acción no se puede deshacer."
       delete_forever_button: => core.ref.delete_forever
       edit_button: => core.ref.edit
+      hide_confirmation: "¿Está seguro de que desea eliminar este mensaje?"
       restore_button: => core.ref.restore
 
     # These translations are used in the scrubber to the right of the post stream.
@@ -407,6 +423,8 @@ core:
       button: Controles
       delete_button: => core.ref.delete
       delete_confirmation: "¿Está seguro de que quiere eliminar este usuario? Las publicaciones del usuario serán eliminadas."
+      delete_error_message: "Falló la eliminación del usuario <i>{username} ({email})</i>"
+      delete_success_message: "El usuario <i>{username} ({email})</i> fue eliminado"
       edit_button: => core.ref.edit
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
@@ -431,8 +449,8 @@ core:
 
     # These translations are used as suffixes when abbreviating numbers.
     number_suffix:
-      kilo_text: " Mil"
-      mega_text: " Millón| Millones"
+      kilo_text: "K"
+      mega_text: "M"
 
     # These translations are used to punctuate a series of items.
     series:
@@ -460,13 +478,14 @@ core:
 
     # Translations in this namespace are displayed when Flarum encounters an error.
     error:
-      403_message: ¡Nanay de la China! No tiene permiso para acceder a esta página.
-      404_message: ¡Recórcholis! La página solicitada no ha podido ser encontrada.
-      404_return_link: "Volver a {forum}"
-      419_message: Has estado inactivo por mucho tiempo.
-      419_return_link: Regresa, para volver a intentarlo.
-      500_message: ¡Caramba! Ha ocurrido un error cuando se cargaba esta página.
-      503_message: "{forum} esta en mantenimiento. Por favor, vuelva más tarde y disculpe la molestia."
+      csrf_token_mismatch: Ha estado inactivo por mucho tiempo.
+      csrf_token_mismatch_return_link: Regrese, para volver a intentarlo.
+      invalid_confirmation_token: Este enlace de confirmación ya se ha utilizado o no es válido.
+      not_authenticated: Usted no tiene permiso para acceder a esta página. Inténtelo de nuevo después de iniciar sesión.
+      not_found: ¡Recórcholis! La página solicitada no ha podido ser encontrada.
+      not_found_return_link: "Volver a {forum}"
+      permission_denied: ¡Nanay de la China! No tiene permiso para acceder a esta página.
+      unknown: ¡Caramba! Ha ocurrido un error cuando se cargaba esta página.
 
     # Translations in this namespace are displayed by the basic HTML discussion index.
     index:
@@ -567,7 +586,7 @@ core:
     edit: Editar
     email: Correo electrónico
     icon: Icono
-    icon_text: "Introduce el nombre de alguna classe de <a>FontAwesome</a>, <em>incluyendo</em> el prefijo <code>fas fa-</code>."
+    icon_text: "Introduzca el nombre de alguna clase de <a>FontAwesome</a>, <em>incluyendo</em> el prefijo <code>fas fa-</code>."
     load_more: Cargar más
     log_in: ¡Conéctese!
     log_out: Desconectarse
