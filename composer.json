@@ -1,5 +1,5 @@
 {
-    "name": "darkfoxdeveloper/flarum-ext-spanish",
+    "name": "darkfoxdeveloper/lang-spanish",
     "type": "flarum-extension",
     "description": "Spanish language pack.",
     "keywords": ["locale"],
@@ -11,8 +11,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/DaRkFoxDeveloper/flarum-ext-spanish/issues",
-        "source": "https://github.com/DaRkFoxDeveloper/flarum-ext-spanish"
+        "issues": "https://github.com/DaRkFoxDeveloper/lang-spanish/issues",
+        "source": "https://github.com/DaRkFoxDeveloper/lang-spanish"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.14"
