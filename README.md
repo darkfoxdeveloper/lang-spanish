@@ -2,7 +2,7 @@
 
 ## Minimum Requirements
 
-- [Flarum](http://flarum.org/) v0.1.0-beta.14.1
+- [Flarum](http://flarum.org/) v0.1.0-beta.15
 
 ## Installation
 Use the command: composer require darkfoxdeveloper/lang-spanish
